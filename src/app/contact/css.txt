@@ -1,0 +1,89 @@
+section{
+    position: relative;
+    top:80px;
+    display: block;
+}
+.max-width{
+    width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    padding-bottom: 4px;
+    font-family: "Ubuntu", sans-serif;
+    text-shadow: 2px 2px 2px rgb(175, 194, 31);
+    transition: 15sec; 
+}
+
+.about .about-content, .services .serv-content, .contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+form{
+    display: block;
+}
+.contact .right form .fields {
+    display: flex;
+}
+.contact .right form .field, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .field input, .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(187, 212, 22);
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.909);
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}   
+.right form .button-area button {
+    display: inline-block;
+    background: #ece817;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 22px;
+    margin-top: 15px;
+    border-radius: 11px;
+}
+p {
+    text-align: justify;
+}
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: rgb(37, 232, 199);
+}

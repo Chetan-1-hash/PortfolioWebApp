@@ -1,0 +1,45 @@
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 12px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+nav .max-width{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+img{
+    height: 2.2em;
+    margin-left: 15px;
+    padding: 2px;
+}
+ul{
+    display: block;
+    float: right; 
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 12px;
+}
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin: 12px;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    border-bottom: 3px solid rgb(255, 238, 0);
+}   

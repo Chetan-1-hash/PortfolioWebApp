@@ -1,0 +1,37 @@
+.main-container-projects{
+    width: 100%;
+    height:100%;
+    position: relative;
+    top: 6rem;
+}
+.main-container-projects .inner-container{
+    width: 80%;
+    height:80%;
+    margin: 30px;
+    /* border: 2px solid rebeccapurple; */
+}
+.main-container-projects .inner-container .title{
+    padding: 10px;
+    margin-left: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-container-projects .inner-container .title .line{
+    padding: 0px 40rem 0px 0px;
+    border-bottom: 2px solid black;
+    font-size: 2px;
+}
+.main-container-projects .inner-container .projects{
+    width: 100%;
+    height: 80%;
+    margin-left: 4rem;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+}
+.main-container-projects .inner-container .projects .project-box{
+    height: 80%;
+    width: 40%;
+    margin: 2rem 3rem;
+    background-color: white;
+    box-shadow: rgb(191, 188, 188) 6px 6px 5px;
+}

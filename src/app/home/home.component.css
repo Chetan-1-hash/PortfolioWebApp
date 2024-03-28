@@ -1,0 +1,56 @@
+.main-container{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    top: 80px;
+    padding: 50px 20px;
+    display: flex;
+}
+.main-container .left{
+    margin: 70px 10px 70px 50px;
+    padding: 40px 10px;
+    /* border: 2px solid rebeccapurple; */
+}
+.main-container .left .text-1{
+    font-size: 27px;
+}
+.main-container .left .text-2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -6px;
+}
+.main-container .left .text-3{
+    font-size: 30px;
+}
+.contact-img{
+    margin: 8px;
+    padding: 8px;
+}
+.contact-img .social_icon{
+    display: flex;
+    /* flex-direction: row; */
+    column-gap: 2rem;
+    font-size: 1.5rem;
+}
+.contact-img .social_icon li{
+    list-style: none;
+    background-color: rebeccapurple;
+    /* background-color: yellow; */
+    border-radius: 5px;
+    padding: 6px 8px;
+}
+.contact-img .social_icon li a{
+    color: white;
+}
+
+.main-container .right{
+    /* border: 2px solid rebeccapurple; */
+    height: 400px;
+    width: 700px;
+    margin-left: 3rem ;
+    margin-top: 4rem;
+}
+.main-container .right img{
+    width: 100%;
+    height: 100%;
+}
