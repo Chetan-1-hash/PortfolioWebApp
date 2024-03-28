@@ -2,14 +2,32 @@
     <div class="inner-container">
         <div class="title">Projects. <span class="line"></span></div>
         <div class="projects">
-            <div class="project-box">
-
-            </div>
-            <div class="project-box">
-                
-            </div>
-            <div class="project-box">
-                
+            <div class="project-box" *ngFor="let p of projectdata; let i=index">
+                <div class="btns">
+                    <button class="link-btn" (click)="opentab(i)" (mouseenter)="showGitToolTip(i)">
+                        <img src="/assets/icons8-github-64.png" alt="github">
+                        <span class="gittooltiptext"> {{ gittooltiptext }}</span>
+                    </button>
+                    
+                    <button class="link-btn" (mouseenter)="showDemoToolTip(i)">
+                        <img src="/assets/icons8-link-64.png" alt="live-link">
+                        <span class="demotooltiptext"> {{ demotooltiptext }}</span>
+                    </button>
+                </div>
+                <div class="pname" style="text-align: center;">
+                    <h3>{{ p.projectname }}</h3>
+                </div>
+                <div class="info">
+                    <div class="pimg">
+                        <img [src]="p.projectimage" alt="projectimage">
+                    </div>
+                    <div class="desc">
+                        <p>{{ p.projectdescription }}</p>
+                    </div>
+                    <div class="skill">
+                        <p *ngFor="let s of p.projectskill"> {{ s }} </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
