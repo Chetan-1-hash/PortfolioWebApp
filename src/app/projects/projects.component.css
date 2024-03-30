@@ -27,6 +27,7 @@
 .main-container-projects .inner-container .projects {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .main-container-projects .inner-container .projects .project-box {
@@ -120,4 +121,47 @@
     text-align: center;
     box-shadow: rgb(191, 191, 188) 3px 3px 3px;
     font-size: 12px;
+}
+
+@media (max-width:1100px) {
+
+    .main-container-projects .inner-container .projects{
+        width: 100%;
+    }
+
+    .main-container-projects .inner-container .projects .project-box{
+        width: 45%;
+    }
+
+    .main-container-projects .inner-container .projects .project-box .info .desc {
+        font-size: 14px;
+    }
+    .main-container-projects .inner-container .projects .project-box .info .skill p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .main-container-projects .inner-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container-projects .inner-container .title .line{
+        padding: 0px 25rem 0px 0px;
+
+    }
+    main-container-projects .inner-container .projects{
+        width: 80%;
+    }
+    .main-container-projects .inner-container .projects .project-box{
+        width: 100%;
+    }
+    
+    .main-container-projects .inner-container .projects .project-box .info .desc {
+        font-size: 16px;
+    }
+    .main-container-projects .inner-container .projects .project-box .info .skill p{
+        font-size: 15px;
+    }
+
 }

@@ -1,7 +1,13 @@
 <nav>
-    <div class="max-wdth">
-        <img src="assets/cc.png" alt="symbol">
-        <ul>
+    <div class="max-width">
+        <div class="header">
+            <img src="assets/cc.png" alt="symbol">
+            <ul id="naviconul">
+                <li><fa-icon id="navicon" [icon]="faNav"></fa-icon></li>
+            </ul>
+        </div>
+
+        <ul id="navrouter">
             <li><a routerLink="" fragment="home">Home</a></li>
             <li><a routerLink="" fragment="aboutme">About me</a></li>
             <li><a routerLink="" fragment="skills">Skills</a></li>

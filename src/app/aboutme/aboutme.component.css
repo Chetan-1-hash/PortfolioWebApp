@@ -61,7 +61,21 @@
 .main-container .inner-container .left{
     /* border: 2px solid rebeccapurple; */
     height: 460px;
-    width: 700px;
+    width: auto;
     margin: 15px;
     padding: 2em;
+}
+
+@media (max-width:650px) {
+    .main-container .title .line{
+        padding: 0px 25rem 0px 0px;
+
+    }
+    .main-container .inner-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container .inner-container .right{
+        width: 500px;
+    }
 }
