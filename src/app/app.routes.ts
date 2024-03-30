@@ -11,6 +11,5 @@ export const routes: Routes = [
     {path:"skills", component:SkillsComponent},
     {path:"contact", component:ContactComponent},
     {path:"projects", component:ProjectsComponent},
-    {path:"", redirectTo:'home', pathMatch:'full'},
-    {path:"**", redirectTo:'home', pathMatch:'full'},
+    
 ];
