@@ -5,12 +5,12 @@
             <div class="project-box" *ngFor="let p of projectdata; let i=index">
                 <div class="btns">
                     <button class="link-btn" (click)="opentab(i)" (mouseenter)="showGitToolTip(i)">
-                        <img src="/assets/icons8-github-64.png" alt="github">
+                        <img src="assets/icons8-github-64.png" alt="github">
                         <span class="gittooltiptext"> {{ gittooltiptext }}</span>
                     </button>
                     
                     <button class="link-btn" (mouseenter)="showDemoToolTip(i)">
-                        <img src="/assets/icons8-link-64.png" alt="live-link">
+                        <img src="assets/icons8-link-64.png" alt="live-link">
                         <span class="demotooltiptext"> {{ demotooltiptext }}</span>
                     </button>
                 </div>
