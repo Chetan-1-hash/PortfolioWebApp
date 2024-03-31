@@ -1,8 +1,8 @@
 .main-contact-container {
   position: relative;
   top: 7rem;
-  width: 80%;
-  margin: 50px auto;
+  width: 100%;
+  margin: 50px 100px;
   padding: 30px 100px;
   background-color: #fff;
   box-shadow: rgba(139, 122, 142, 0.2) 0px 2px 8px 0px;
@@ -50,4 +50,11 @@ input[type=submit] {
 .container {
   border-radius: 5px;
   padding: 20px;
+}
+
+@media (max-width:650px) {
+  .main-contact-container{
+    padding: 30px 40px;
+    margin: 50px;
+  }
 }

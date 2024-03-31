@@ -69,9 +69,7 @@
         /* border: 2px solid red; */
     }
     .main-container .right{
-        margin-left: 0rem;
-        width: auto;
-        margin-top: 3rem;
+        display: none;
         /* border: 2px solid red; */
     }
 }

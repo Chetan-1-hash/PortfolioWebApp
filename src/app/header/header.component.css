@@ -15,31 +15,37 @@ nav .max-width{
 }
 .max-width{
     max-width: 100%;
-    padding: 0 80px;
+    padding: 0 60px 0 60px;
     margin: auto;
 }
 .header{
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-img{
+.header img{
     height: 2.2em;
     margin-left: 15px;
     padding: 2px;
 }
-ul{
-    display: none;
-    float: right; 
-}
-#navicon{
+.header #naviconul{
     display: none;
 }
-nav ul li{
+.header #naviconul #navicon{
+    display: none;
+    text-decoration: none;
+}
+
+#navrouter{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav #navrouter li{
     display: inline-block;
     margin-top: 12px;
 }
 nav #navrouter li a{
+    width: auto;
     color: black;
     font-size: 18px;
     font-weight: 500;
@@ -48,11 +54,10 @@ nav #navrouter li a{
     padding: 5px;
 }
 
-nav ul li a:hover{
+nav #navrouter li a:hover{
     border-bottom: 3px solid rgb(255, 238, 0);
 }   
-
-@media (max-width:650px) {
+@media (max-width:900px){
     nav{
         padding: 5px 0px;
     }
@@ -67,21 +72,27 @@ nav ul li a:hover{
         margin-left: 0px;
     }
 
+    nav .max-width .header{
+        width: 100%;
+    }
+
     nav .max-width .header #naviconul{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        /* border: 2px solid rebeccapurple; */
     }
 
     nav .max-width .header #naviconul li{
         margin-right: 8px;
-
+        list-style: none;
     }
     
-    nav ul li #navicon{
+    nav #naviconul li #navicon{
         display: block;
-        margin-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        font-size: 22px;
     }
     
     nav .max-width #navrouter{
@@ -95,7 +106,56 @@ nav ul li a:hover{
     
     nav .max-width #navrouter li a{
         display: none;
-        
+    }
+
+ 
+}
+@media (max-width:650px) {
+    nav{
+        padding: 5px 0px;
+    }
+    nav .max-width{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+
+    nav .max-width .header img{
+        height: 2.5em;
+        margin-left: 0px;
+    }
+    
+
+    nav .max-width .header #naviconul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    nav .max-width .header #naviconul li{
+        margin-right: 8px;
+    }
+    
+    nav #naviconul li #navicon{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+    
+    nav .max-width #navrouter{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid red; 
+    }
+    
+    nav .max-width #navrouter li a{
+        display: none;
     }
 
     

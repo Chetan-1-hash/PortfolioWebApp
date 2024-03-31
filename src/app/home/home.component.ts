@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faHackerrank, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faHackerrank, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -17,4 +17,5 @@ export class HomeComponent {
   faLinkedIn = faLinkedin;
   faInsta = faInstagram;
   faHackerRank = faHackerrank;
+  faGithub = faGithub;
 }

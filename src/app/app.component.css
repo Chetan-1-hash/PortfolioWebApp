@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     z-index: 10;
+    width: auto;
 }
 section{
     width: auto;

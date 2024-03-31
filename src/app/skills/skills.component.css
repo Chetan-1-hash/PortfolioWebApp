@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 80%;
+    /* width: 80%;   */
 }
 .main-container-skills .inner-container .skills-set .col .skill{
     display: flex;
@@ -53,11 +53,12 @@ img{
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
     .main-container-skills .inner-container{
         display: flex;
         flex-direction: column;
         margin: 10px;
+        height: 100%;
     }
     .main-container-skills .inner-container .title{
         margin-left: 0rem;
@@ -67,13 +68,11 @@ img{
         border-bottom: 2px solid black;
         font-size: 2px;
     }
-    .col{
-        width: 70%;
-    }
     .skills-set{
         display: flex;
         flex-direction: column;
         margin: 0px;
+        height: 100%;
     }
     .main-container-skills .inner-container .skills-set .col .skill{
         margin: 5px 10px;

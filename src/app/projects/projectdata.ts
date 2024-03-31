@@ -5,7 +5,7 @@ export const projects = [
             github:"https://github.com/Chetan-1-hash/NotesApp",
             demo:null,
         },
-        projectimage:"/assets/Noteapp-img.png",
+        projectimage:"assets/Noteapp-img.png",
         projectdescription:"NotesApp having features like CRUD Operations and some UI features",
         projectskill:[
             "Angular17", "Bootstrap", "Spring Boot", "MongoDB"
@@ -17,7 +17,7 @@ export const projects = [
             github:"https://github.com/Chetan-1-hash/WeatherApp",
             demo:null,
         },
-        projectimage:"/assets/Weatherapp-img.png",
+        projectimage:"assets/Weatherapp-img.png",
         projectdescription:"WeatherApp show the weather for particular location",
         projectskill:[
             "Angular17", "Openweather Api"
@@ -29,7 +29,7 @@ export const projects = [
             github:null,
             demo:null,
         },
-        projectimage:"/assets/Myntraclone-img.png",
+        projectimage:"assets/Myntraclone-img.png",
         projectdescription:"Myntraclone app cloned and  having some additional collaboration features.",
         projectskill:[
             "Angular17",
@@ -41,7 +41,7 @@ export const projects = [
             github:null,
             demo:null,
         },
-        projectimage:"/assets/OnlineExamSystem-img.png",
+        projectimage:"assets/OnlineExamSystem-img.png",
         projectdescription:"WeatherApp created using Angular 17,",
         projectskill:[
             "Angular17", "Bootstrap", "Spring Boot", "MySQL",

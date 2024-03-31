@@ -130,7 +130,7 @@
     }
 
     .main-container-projects .inner-container .projects .project-box{
-        width: 45%;
+        width: 100%;
     }
 
     .main-container-projects .inner-container .projects .project-box .info .desc {
@@ -147,21 +147,22 @@
         flex-direction: column;
     }
     .main-container-projects .inner-container .title .line{
-        padding: 0px 25rem 0px 0px;
+        padding: 0px 18rem 0px 0px;
 
     }
     main-container-projects .inner-container .projects{
-        width: 80%;
+        width: 100%;
     }
     .main-container-projects .inner-container .projects .project-box{
         width: 100%;
+        height: 70vh;
     }
     
     .main-container-projects .inner-container .projects .project-box .info .desc {
         font-size: 16px;
     }
     .main-container-projects .inner-container .projects .project-box .info .skill p{
-        font-size: 15px;
+        font-size: 12px;
     }
 
 }
