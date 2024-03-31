@@ -19,6 +19,23 @@
     font-weight: 600;
     margin-left: -6px;
 }
+.cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 1.2em;
+    background-color: black;
+    animation: blink 0.5s infinite alternate; /* Blinking animation */
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 .main-container .left .text-3{
     font-size: 30px;
 }
