@@ -78,4 +78,17 @@
     .main-container .inner-container .right{
         width: 500px;
     }
+    .main-container .title{
+        margin-left: 2rem;
+    }
+    .main-container .inner-container .right{
+        margin-left: 10px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:400px){
+    .main-container .title .line{
+        padding: 0px 18rem 0px 0px;
+    }
 }

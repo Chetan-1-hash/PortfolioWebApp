@@ -54,7 +54,11 @@ input[type=submit] {
 
 @media (max-width:650px) {
   .main-contact-container{
-    padding: 30px 40px;
+    padding: 30px 30px;
     margin: 50px;
+    width: 28rem;
+  }
+  .container{
+    padding: 20px 15px ;
   }
 }
