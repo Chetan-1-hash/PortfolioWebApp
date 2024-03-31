@@ -3,11 +3,11 @@
         <div class="header">
             <img src="assets/cc.png" alt="symbol">
             <ul id="naviconul">
-                <li><fa-icon id="navicon" [icon]="faNav"></fa-icon></li>
+                <li><fa-icon id="navicon" (click)="openNav()" [icon]="faNav"></fa-icon></li>
             </ul>
         </div>
 
-        <ul id="navrouter">
+        <ul id="navrouter" #navrouter>
             <li><a routerLink="" fragment="home">Home</a></li>
             <li><a routerLink="" fragment="aboutme">About me</a></li>
             <li><a routerLink="" fragment="skills">Skills</a></li>

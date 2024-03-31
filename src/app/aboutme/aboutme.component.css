@@ -61,7 +61,7 @@
 .main-container .inner-container .left{
     /* border: 2px solid rebeccapurple; */
     height: 460px;
-    width: auto;
+    width: 30rem;
     margin: 15px;
     padding: 2em;
 }
@@ -71,15 +71,18 @@
         padding: 0px 25rem 0px 0px;
 
     }
+    .main-container .title{
+        margin-left: 1rem;
+    }
     .main-container .inner-container{
         display: flex;
         flex-direction: column;
     }
+    .main-container .inner-container .left{
+        text-align: center;
+    }
     .main-container .inner-container .right{
         width: 500px;
-    }
-    .main-container .title{
-        margin-left: 2rem;
     }
     .main-container .inner-container .right{
         margin-left: 10px;
@@ -89,6 +92,6 @@
 
 @media (max-width:400px){
     .main-container .title .line{
-        padding: 0px 18rem 0px 0px;
+        padding: 0px 20rem 0px 0px;
     }
 }

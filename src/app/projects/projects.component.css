@@ -150,9 +150,11 @@
         display: flex;
         flex-direction: column;
     }
+    .main-container-projects .inner-container .title{
+        margin-left: 1rem;
+    }
     .main-container-projects .inner-container .title .line{
         padding: 0px 18rem 0px 0px;
-
     }
     main-container-projects .inner-container .projects{
         width: 100%;
@@ -176,5 +178,8 @@
     }
     .main-container-projects .inner-container .projects .project-box{
         height: 60vh;
+    }
+    .main-container-projects .inner-container .title .line{
+        padding: 0px 20rem 0px 0px;
     }
 }

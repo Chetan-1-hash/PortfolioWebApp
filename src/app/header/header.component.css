@@ -1,4 +1,4 @@
-nav{
+nav {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -7,44 +7,52 @@ nav{
     transition: all 0.3s ease;
     background-color: white;
 }
-nav .max-width{
+
+nav .max-width {
     display: flex;
     background-color: white;
     align-items: center;
     justify-content: space-between;
 }
-.max-width{
+
+.max-width {
     max-width: 100%;
     padding: 0 60px 0 60px;
     margin: auto;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
 }
-.header img{
+
+.header img {
     height: 2.2em;
     margin-left: 15px;
     padding: 2px;
 }
-.header #naviconul{
+
+.header #naviconul {
     display: none;
 }
-.header #naviconul #navicon{
+
+.header #naviconul #navicon {
     display: none;
     text-decoration: none;
 }
 
-#navrouter{
+#navrouter {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-nav #navrouter li{
+
+nav #navrouter li {
     display: inline-block;
     margin-top: 12px;
 }
-nav #navrouter li a{
+
+nav #navrouter li a {
     width: auto;
     color: black;
     font-size: 18px;
@@ -54,109 +62,112 @@ nav #navrouter li a{
     padding: 5px;
 }
 
-nav #navrouter li a:hover{
+nav #navrouter li a:hover {
     border-bottom: 3px solid rgb(255, 238, 0);
-}   
-@media (max-width:900px){
-    nav{
+}
+
+@media (max-width:900px) {
+    nav {
         padding: 5px 0px;
     }
-    nav .max-width{
+
+    nav .max-width {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 0px 30px;
     }
-    
-    nav .max-width img{
+
+    nav .max-width img {
         margin-left: 0px;
     }
 
-    nav .max-width .header{
+    nav .max-width .header {
         width: 100%;
     }
 
-    nav .max-width .header #naviconul{
+    nav .max-width .header #naviconul {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    nav .max-width .header #naviconul li{
+    nav .max-width .header #naviconul li {
         margin-right: 8px;
         list-style: none;
     }
-    
-    nav #naviconul li #navicon{
+
+    nav #naviconul li #navicon {
         display: block;
         width: 100%;
         height: 100%;
         margin-bottom: 0px;
         font-size: 22px;
     }
-    
-    nav .max-width #navrouter{
+
+    nav .max-width #navrouter {
         width: 100%;
-        display: none;
         flex-direction: column;
         align-items: center;
-        border: 2px solid red;
-        
-    }
-    
-    nav .max-width #navrouter li a{
-        display: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
- 
+    nav .max-width #navrouter.open {
+        max-height: 500px;
+    }
 }
+
 @media (max-width:650px) {
-    nav{
+    nav {
         padding: 5px 0px;
     }
-    nav .max-width{
+
+    nav .max-width {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 0px 30px;
     }
 
-    nav .max-width .header img{
-        height: 2.5em;
+    nav .max-width .header img {
+        height: 3.5em;
         margin-left: 0px;
     }
-    
 
-    nav .max-width .header #naviconul{
+
+    nav .max-width .header #naviconul {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         /* border: 2px solid rebeccapurple; */
     }
 
-    nav .max-width .header #naviconul li{
+    nav .max-width .header #naviconul li {
         margin-right: 8px;
     }
-    
-    nav #naviconul li #navicon{
+
+    nav #naviconul li #navicon {
         display: block;
         width: 100%;
         height: 100%;
         margin-bottom: 0px;
-        font-size: 22px;
-    }
-    
-    nav .max-width #navrouter{
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid red; 
-    }
-    
-    nav .max-width #navrouter li a{
-        display: none;
+        font-size: 30px;
     }
 
-    
+    nav .max-width #navrouter {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s cubic-bezier(0.6, 0.5, 0.2, 0.8);;
+    }
+
+    nav .max-width #navrouter.open {
+        max-height: 500px;
+    }
+
+
 }
