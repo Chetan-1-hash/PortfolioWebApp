@@ -48,6 +48,9 @@
 }
 
 @media (max-width:650px) {
+    .main-container{
+        width: 40em;
+    }
     .main-container .title .line{
         padding: 0px 25rem 0px 0px;
 
@@ -70,6 +73,9 @@
 }
 
 @media (max-width:400px){
+    .main-container{
+        width: 30em;
+    }
     .main-container .title .line{
         padding: 0px 20rem 0px 0px;
     }
