@@ -1,5 +1,5 @@
 .main-container{
-    width: 100%;
+    width: 90em;
     height: 95%;
     position: relative;
     top: 50px;
@@ -24,58 +24,20 @@
     flex-direction: row;
     /* border: 2px solid rebeccapurple; */
 }
+.main-container .inner-container .left img{
+    height: 100%;
+    /* width: 50%; */
+}
+
 .main-container .inner-container .right{
     margin: 15px;
-    padding: 40px 10px;
-    /* border: 2px solid rebeccapurple; */
     padding: 2em;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .main-container .inner-container .right .intro{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 1em;
-}
-.main-container .inner-container .right .education{
-    font-size: 17px;
-}
-.main-container .inner-container .right .education .edu{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.8em;
-}
-.main-container .inner-container .right .education .edu .edu-box{
-    border-left:3px solid yellow; 
-    margin-left: 3px;
-    padding: 8px 5px 5px 1em;
-    font-size: 15px;
-    font-weight: 600;
-}
-.main-container .inner-container .right .education .edu .edu-box .year{
-    background-color: yellow;
-    padding:4px;
-}
-.main-container .inner-container .right .education .edu .edu-box .clg{
-    padding-top: 8px
-}
-.main-container .inner-container .right .education .edu a{
-    width: 120px;
-    outline: none;
-    border: none;
-    background-color: yellow;
-    padding: 6px;
-    margin-top: 15px;
-    margin-left: 1rem;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-.main-container .inner-container .right .education .edu a:hover{
-    background-color: rgb(244, 244, 101);
 }
 .main-container .inner-container .left{
     /* border: 2px solid rebeccapurple; */
@@ -102,8 +64,6 @@
     }
     .main-container .inner-container .right{
         width: 500px;
-    }
-    .main-container .inner-container .right{
         margin-left: 10px;
         padding-left: 15px;
     }
