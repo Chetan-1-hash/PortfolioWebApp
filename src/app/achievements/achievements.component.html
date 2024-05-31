@@ -1,0 +1,26 @@
+<div class="main-container-copyrights">
+    <div class="inner-container">
+        <div class="title">Achievements. <span class="line"></span></div>
+        <div class="copyrights">
+            <div class="copyright-box" *ngFor="let c of copyrightdata; let i=index">
+                <div class="btns">
+                    <button class="link-btn" (click)="opentab(i)" (mouseenter)="showDriveToolTip(i)">
+                        <img src="assets/icons8-link-64.png" alt="live-link">
+                        <span class="drivetooltiptext"> {{ drivetooltiptext }}</span>
+                    </button>
+                </div>
+                <div class="cname" style="text-align: center;">
+                    <h3>{{ c.copyrightname }}</h3>
+                </div>
+                <div class="info">
+                    <div class="cimg">
+                        <img [src]="c.copyrightimage" alt="copyrightimage">
+                    </div>
+                    <div class="desc">
+                        <p>{{ c.copyrightdescription }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 .main-container-skills{
-    width: auto;
+    width: 85em;
     height:auto;
     position: relative;
     top: 6rem;
@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 .main-container-skills .inner-container .title .line{
-    padding: 0px 40rem 0px 0px;
+    padding: 0px 60rem 0px 0px;
     border-bottom: 2px solid black;
     font-size: 2px;
 }
@@ -43,6 +43,12 @@ img{
 }
 
 @media (max-width:850px){
+    .main-container-skills{
+        width: 50em;
+        height:auto;
+        position: relative;
+        top: 6rem;
+    }
     .main-container-skills .inner-container .title{
         margin-left: 2rem;
     }
@@ -54,6 +60,13 @@ img{
 }
 
 @media (max-width:650px) {
+
+    .main-container-skills{
+        width: 35em;
+        height:auto;
+        position: relative;
+        top: 6rem;
+    }
     .main-container-skills .inner-container{
         display: flex;
         flex-direction: column;

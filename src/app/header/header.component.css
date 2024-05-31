@@ -67,9 +67,6 @@ nav #navrouter li a:hover {
 }
 
 @media (max-width:900px) {
-    nav {
-        padding: 5px 0px;
-    }
 
     nav .max-width {
         display: flex;

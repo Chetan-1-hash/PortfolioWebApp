@@ -46,7 +46,11 @@
     margin: 15px;
     padding: 2em;
 }
-
+@media (max-width:9000px) {
+    .main-container{
+        width: 75em;
+    }
+}
 @media (max-width:650px) {
     .main-container{
         width: 40em;
