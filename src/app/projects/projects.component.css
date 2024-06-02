@@ -19,7 +19,7 @@
 }
 
 .main-container-projects .inner-container .title .line {
-    padding: 0px 40rem 0px 0px;
+    padding: 0px 80rem 0px 0px;
     border-bottom: 2px solid black;
     font-size: 2px;
 }
@@ -154,7 +154,7 @@
         margin-left: 1rem;
     }
     .main-container-projects .inner-container .title .line{
-        padding: 0px 18rem 0px 0px;
+        padding: 0px 25rem 0px 0px;
     }
     main-container-projects .inner-container .projects{
         width: 100%;
@@ -180,6 +180,6 @@
         height: 60vh;
     }
     .main-container-projects .inner-container .title .line{
-        padding: 0px 20rem 0px 0px;
+        padding: 0px 22rem 0px 0px;
     }
 }

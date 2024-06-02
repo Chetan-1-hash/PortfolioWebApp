@@ -3,6 +3,7 @@
     height: 85%;
     position: relative;
     top: 80px;
+    left: 50px;
     padding: 50px 20px;
     display: flex;
 }
