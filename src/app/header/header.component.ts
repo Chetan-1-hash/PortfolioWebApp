@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faNavicon } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,12 +12,13 @@ import { faNavicon } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent {
   
-  constructor(private activateRoute:ActivatedRoute){}
+  constructor(private activateRoute:ActivatedRoute, private router : Router){}
 
   faNav = faNavicon;
   isOpened:boolean = false;
 
   ngOnInit(){
+    this.router.navigate([], { fragment: 'home' });
     this.activateRoute.fragment.subscribe(
       (data) => {
         console.log(data);
