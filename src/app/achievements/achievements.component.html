@@ -17,7 +17,8 @@
                         <img [src]="c.copyrightimage" alt="copyrightimage">
                     </div>
                     <div class="desc">
-                        <p>{{ c.copyrightdescription }}</p>
+                        <!-- <p>{{ c.copyrightdescription }}</p> -->
+                        <p [innerHTML]="c.copyrightdescription"></p>
                     </div>
                 </div>
             </div>

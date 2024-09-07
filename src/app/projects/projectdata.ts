@@ -36,13 +36,13 @@ export const projects = [
         ],
     },
     {
-        projectname:"WeatherApp",
+        projectname:"OnlineExamSystem",
         projectlinks:{
             github:null,
             demo:null,
         },
         projectimage:"assets/OnlineExamSystem-img.png",
-        projectdescription:"WeatherApp created using Angular 17,",
+        projectdescription:"OnlineExam system, a basic exam platform which includes performing exam, result report etc.",
         projectskill:[
             "Angular17", "Bootstrap", "Spring Boot", "MySQL",
         ],

@@ -23,5 +23,13 @@ export const data = [
         copyrightimage:"assets/c3.jpg",
         copyrightdescription:"The email authentication system which enhances privacy and service by securing personal information and ensuring only real user accounts",
     },
+    {
+        copyrightname:"Publication of Research Papers",
+        copyrightlinks:{
+            drive:"https://drive.google.com/drive/folders/1IICv9DWZC0rl-7uiCvdWUiAoP-trkhiV?usp=drive_link",
+        },
+        copyrightimage:"assets/PulicationCertificate.png",
+        copyrightdescription:"BMI Analysis Pre-Covid and Post-Covid using Machine Learning Algorithms. <br><br> Published at: INTERNATIONAL JOURNAL OF CREATIVE RESEARCH THOUGHTS - IJCRT",
+    },
     
 ]
