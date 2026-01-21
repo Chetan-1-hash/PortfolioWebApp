@@ -1,0 +1,126 @@
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { Github, ExternalLink } from "lucide-react";
+
+const projects = [
+  {
+    title: "NotesApp",
+    description: "NotesApp having features like CRUD Operations and some UI features",
+    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Noteapp-img.png",
+    technologies: ["Angular17", "Bootstrap", "Spring Boot", "MongoDB"],
+    github: "https://github.com/chetan-1-hash",
+    live: "#",
+  },
+  {
+    title: "WeatherApp",
+    description: "WeatherApp shows the weather for particular location",
+    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Weatherapp-img.png",
+    technologies: ["Angular17", "OpenWeather API"],
+    github: "https://github.com/chetan-1-hash",
+    live: "#",
+  },
+  {
+    title: "Myntra Clone App",
+    description: "Myntraclone app cloned and having some additional collaboration features",
+    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Myntraclone-img.png",
+    technologies: ["Angular17"],
+    github: "https://github.com/chetan-1-hash",
+    live: "#",
+  },
+  {
+    title: "Online Exam System",
+    description: "OnlineExam system, a basic exam platform which includes performing exam, result report etc.",
+    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/OnlineExamSystem-img.png",
+    technologies: ["Angular17", "Bootstrap", "Spring Boot", "MySQL"],
+    github: "https://github.com/chetan-1-hash",
+    live: "#",
+  },
+];
+
+export const ProjectsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  return (
+    <section id="projects" className="py-24 relative">
+      <div className="container mx-auto px-6" ref={ref}>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="section-heading text-center">
+            My <span className="gradient-text">Projects</span>
+          </h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+              className="group"
+            >
+              <div className="glass-card rounded-2xl overflow-hidden hover-lift">
+                {/* Project Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
+                  
+                  {/* Overlay Links */}
+                  <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-background/60">
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-3 rounded-full glass-card hover:glow"
+                    >
+                      <Github className="w-6 h-6" />
+                    </motion.a>
+                    <motion.a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-3 rounded-full glass-card hover:glow"
+                    >
+                      <ExternalLink className="w-6 h-6" />
+                    </motion.a>
+                  </div>
+                </div>
+
+                {/* Project Info */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold font-display mb-2">{project.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                  
+                  {/* Technologies */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
