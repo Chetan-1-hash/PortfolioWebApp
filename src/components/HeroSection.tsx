@@ -169,7 +169,7 @@ export const HeroSection = () => {
                   <div className="w-48 h-72 mx-auto mb-6 rounded-full bg-gradient-to-r from-primary to-accent p-1">
                     <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden">
                       <img
-                        src="src\assets\a1.png"
+                        src={personalInfo.profileImage}
                         alt="Chetan Chopade"
                         className="w-full h-full object-cover"
                       />

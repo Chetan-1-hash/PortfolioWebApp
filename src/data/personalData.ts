@@ -6,6 +6,15 @@
 
 import { FileText, Lightbulb } from "lucide-react";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
+import ProfileImg from "@/assets/a1.png";
+import AboutmeImg from "@/assets/developer-portrait.png";
+import CricLivelySS from "@/assets/CricLivelySS.png";
+import NoteappImg from "@/assets/Noteapp-img.png";
+import WeatherAppImg from "@/assets/Weatherapp-img.png";
+import MyntraCloneImg from "@/assets/Myntraclone-img.png";
+import OnlineExamSystemImg from "@/assets/OnlineExamSystem-img.png";
+import MRNDlogo from "@/assets/MRND PVT LTD logo.svg"
+import TCSlogo from "@/assets/tcs logo.png"
 
 export const personalInfo = {
   name: "Chetan Chopade",
@@ -17,8 +26,8 @@ export const personalInfo = {
   location: "Pune, India",
   bio: "I'm a B.E graduate in Computer Engineering with a strong passion for Machine Learning and Web Development. I love building innovative solutions and exploring new technologies.",
   profileDetails: "Computer Engineering graduate currently working as a System Engineer at Tata Consultancy Services (TCS). Skilled in Core/Advanced Java, Python, and Machine Learning, with a strong passion for both Machine Learning and Web Development. Dedicated to building impactful, user-friendly solutions and contributing to innovative projects. A collaborative team player with a continuous drive to upskill in emerging technologies and deliver high-quality results in fast-paced environments.",
-  profileImage: "src//assets//a1.png",
-  developerPortrait: "src//assets//developer-portrait.png",
+  profileImage: ProfileImg,
+  developerPortrait: AboutmeImg,
   aboutText1: "Computer Engineering graduate and System Engineer at Tata Consultancy Services (TCS), specializing in Core/Advanced Java, Python, and AI/ML. Passionate about transforming ideas into reliable, scalable applications, with strong interests in Aritifial Intelligence and Web Development. Motivated to contribute to innovative teams while continuously learning and evolving as a software professional.",
   aboutText2: `I am an enthusiast in the field of <span class="text-primary font-semibold">Aritifial Intelligence/Machine Learning</span> 
     and <span class="text-primary font-semibold">Web Development</span>. Bringing forth the ability to work well with others to utilize my skills to visually enhance projects and continuously upskill in emerging technologies  to create more delightful experiences.`,
@@ -68,7 +77,7 @@ export const projects = [
     id: 1,
     title: "CricLively",
     description: "A cricket live scores dashboard, and dynamic matches & stats analysis",
-    image: "src//assets//CricLivelySS.png",
+    image: CricLivelySS,
     technologies: ["React", "Spring boot", "Spring Security", "MongoDB", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
@@ -78,7 +87,7 @@ export const projects = [
     id: 2,
     title: "Notes App",
     description: "A full-stack notes application with user authentication, CRUD operations, and responsive design.",
-    image: "src//assets//Noteapp-img.png",
+    image: NoteappImg,
     technologies: ["Angular", "Spring boot", "MongoDB", "Bootstrap"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
@@ -88,7 +97,7 @@ export const projects = [
     id: 3,
     title: "Weather App",
     description: "Real-time weather application with location-based forecasts and interactive UI.",
-    image: "src//assets//Weatherapp-img.png",
+    image: WeatherAppImg,
     technologies: ["Angular", "API"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
@@ -98,7 +107,7 @@ export const projects = [
     id: 4,
     title: "Myntra Clone",
     description: "E-commerce platform clone with product listings, cart functionality, and responsive design.",
-    image: "src//assets//Myntraclone-img.png",
+    image: MyntraCloneImg,
     technologies: ["Angular", "Spring", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
@@ -108,7 +117,7 @@ export const projects = [
     id: 5,
     title: "Online Exam System",
     description: "A comprehensive online examination platform with timer, auto-submit, and result generation.",
-    image: "src//assets//OnlineExamSystem-img.png",
+    image: OnlineExamSystemImg,
     technologies: ["Spring boot", "MySQL", "Swing"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
@@ -118,7 +127,7 @@ export const projects = [
 
 export const experience = [
   {
-    logo:"src//assets//MRND PVT LTD logo.svg",
+    logo:MRNDlogo,
     position: "Junior Full Stack Java Developer",
     type: "Intern",
     companyName: "MRND Pvt Ltd, Akurdi",
@@ -131,7 +140,7 @@ export const experience = [
     ]
   },
   {
-    logo:"src//assets//tcs logo.png",
+    logo:TCSlogo,
     position: "System Engineer",
     type: "Full Tiime",
     companyName: "Tata Consultancy Services (TCS)",
