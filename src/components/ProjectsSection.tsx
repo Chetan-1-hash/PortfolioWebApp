@@ -39,37 +39,54 @@ export const ProjectsSection = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60" />
-                  
-                  {/* Overlay Links */}
-                  <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-background/60">
-                    <motion.a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="p-3 rounded-full glass-card hover:glow"
-                    >
-                      <Github className="w-6 h-6" />
-                    </motion.a>
-                    <motion.a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="p-3 rounded-full glass-card hover:glow"
-                    >
-                      <ExternalLink className="w-6 h-6" />
-                    </motion.a>
+
+                  {/* Overlay */}
+                  <div
+                    className="absolute inset-0 flex items-center justify-center transition-all duration-300 bg-background/70
+                opacity-0 group-hover:opacity-100"
+                  >
+                    {project.upcoming ? (
+                      <span className="text-xl font-bold tracking-wider text-primary border-2 border-primary px-6 py-2 rounded-full uppercase">
+                        Coming Soon.... 
+                      </span>
+                    ) : (
+                      // ✅ Completed project links
+                      <div className="flex gap-4">
+                        <motion.a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-3 rounded-full glass-card hover:glow"
+                        >
+                          <Github className="w-6 h-6" />
+                        </motion.a>
+
+                        <motion.a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="p-3 rounded-full glass-card hover:glow"
+                        >
+                          <ExternalLink className="w-6 h-6" />
+                        </motion.a>
+                      </div>
+                    )}
                   </div>
                 </div>
 
                 {/* Project Info */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold font-display mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-                  
+                  <h3 className="text-xl font-bold font-display mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {project.description}
+                  </p>
+
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (

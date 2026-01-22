@@ -19,8 +19,8 @@ export const personalInfo = {
   profileDetails: "Computer Engineering graduate currently working as a System Engineer at Tata Consultancy Services (TCS). Skilled in Core/Advanced Java, Python, and Machine Learning, with a strong passion for both Machine Learning and Web Development. Dedicated to building impactful, user-friendly solutions and contributing to innovative projects. A collaborative team player with a continuous drive to upskill in emerging technologies and deliver high-quality results in fast-paced environments.",
   profileImage: "src//assets//a1.png",
   developerPortrait: "src//assets//developer-portrait.png",
-  aboutText1: "I completed B.E in Computer Engineering, committed to utilizing my skills for the mission of the company. Looking for a challenging role in an organization to utilize my Core and Advanced Java, Python, and Machine Learning skills.",
-  aboutText2: `I am an enthusiast in the field of <span class="text-primary font-semibold">Machine Learning</span> 
+  aboutText1: "Computer Engineering graduate and System Engineer at Tata Consultancy Services (TCS), specializing in Core/Advanced Java, Python, and AI/ML. Passionate about transforming ideas into reliable, scalable applications, with strong interests in Aritifial Intelligence and Web Development. Motivated to contribute to innovative teams while continuously learning and evolving as a software professional.",
+  aboutText2: `I am an enthusiast in the field of <span class="text-primary font-semibold">Aritifial Intelligence/Machine Learning</span> 
     and <span class="text-primary font-semibold">Web Development</span>. Bringing forth the ability to work well with others to utilize my skills to visually enhance projects and continuously upskill in emerging technologies  to create more delightful experiences.`,
   resumeLink: "https://drive.google.com/file/d/1kNZT6NJKgZP0ef-PH7dbqK2_G5BptoI0/view?usp=drive_link",
 };
@@ -69,9 +69,10 @@ export const projects = [
     title: "CricLively",
     description: "A cricket live scores dashboard, and dynamic matches & stats analysis",
     image: "src//assets//CricLivelySS.png",
-    technologies: ["React", "Spring boot", "MongoDB", "Tailwind CSS"],
+    technologies: ["React", "Spring boot", "Spring Security", "MongoDB", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
+    upcoming: true,
   },
   {
     id: 2,
@@ -81,6 +82,7 @@ export const projects = [
     technologies: ["Angular", "Spring boot", "MongoDB", "Bootstrap"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
+    upcoming: false,
   },
   {
     id: 3,
@@ -90,6 +92,7 @@ export const projects = [
     technologies: ["Angular", "API"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
+    upcoming: false,
   },
   {
     id: 4,
@@ -99,6 +102,7 @@ export const projects = [
     technologies: ["Angular", "Spring", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
+    upcoming: false,
   },
   {
     id: 5,
@@ -108,6 +112,7 @@ export const projects = [
     technologies: ["Spring boot", "MySQL", "Swing"],
     liveLink: "#",
     githubLink: "https://github.com/Chetan-1-hash",
+    upcoming: false,
   },
 ];
 
