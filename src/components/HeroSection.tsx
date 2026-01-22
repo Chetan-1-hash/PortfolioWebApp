@@ -1,8 +1,8 @@
+import { personalInfo, socialLinks } from "@/data/personalData";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, Instagram } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const roles = ["Web Developer", "Full Stack Developer", "Java Developer", "Tech Enthusiast"];
 
 export const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -10,7 +10,7 @@ export const HeroSection = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentRole = roles[roleIndex];
+    const currentRole = personalInfo.roles[roleIndex];
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         if (displayText.length < currentRole.length) {
@@ -23,7 +23,7 @@ export const HeroSection = () => {
           setDisplayText(displayText.slice(0, -1));
         } else {
           setIsDeleting(false);
-          setRoleIndex((prev) => (prev + 1) % roles.length);
+          setRoleIndex((prev) => (prev + 1) % personalInfo.roles.length);
         }
       }
     }, isDeleting ? 50 : 100);
@@ -31,12 +31,6 @@ export const HeroSection = () => {
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, roleIndex]);
 
-  const socialLinks = [
-    { icon: Github, href: "https://github.com/chetan-1-hash", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/chetan-chopade-27b50a25b/", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/chetan_chopade13/", label: "Instagram" },
-    { icon: Mail, href: "mailto:chetanchopade20@gmail.com", label: "Email" },
-  ];
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -133,7 +127,7 @@ export const HeroSection = () => {
               className="flex gap-4 justify-center lg:justify-start"
             >
               <motion.a
-                href="https://drive.google.com/file/d/1LSfNYTspJp9qEagppejTTbCT6NaT6PBq/view?usp=sharing"
+                href={personalInfo.resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -181,7 +175,7 @@ export const HeroSection = () => {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold font-display mb-2">Chetan Chopade</h3>
+                  <h3 className="text-xl font-bold font-display mb-2">Chetan Sanjay Chopade</h3>
                   <p className="text-muted-foreground mb-4">Full Stack Developer</p>
                   <div className="flex justify-center gap-4 text-sm text-muted-foreground">
                     <span>📍 Pune, India</span>

@@ -2,41 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Github, ExternalLink } from "lucide-react";
-
-const projects = [
-  {
-    title: "NotesApp",
-    description: "NotesApp having features like CRUD Operations and some UI features",
-    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Noteapp-img.png",
-    technologies: ["Angular17", "Bootstrap", "Spring Boot", "MongoDB"],
-    github: "https://github.com/chetan-1-hash",
-    live: "#",
-  },
-  {
-    title: "WeatherApp",
-    description: "WeatherApp shows the weather for particular location",
-    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Weatherapp-img.png",
-    technologies: ["Angular17", "OpenWeather API"],
-    github: "https://github.com/chetan-1-hash",
-    live: "#",
-  },
-  {
-    title: "Myntra Clone App",
-    description: "Myntraclone app cloned and having some additional collaboration features",
-    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/Myntraclone-img.png",
-    technologies: ["Angular17"],
-    github: "https://github.com/chetan-1-hash",
-    live: "#",
-  },
-  {
-    title: "Online Exam System",
-    description: "OnlineExam system, a basic exam platform which includes performing exam, result report etc.",
-    image: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/OnlineExamSystem-img.png",
-    technologies: ["Angular17", "Bootstrap", "Spring Boot", "MySQL"],
-    github: "https://github.com/chetan-1-hash",
-    live: "#",
-  },
-];
+import { projects } from "@/data/personalData";
 
 export const ProjectsSection = () => {
   const ref = useRef(null);
@@ -77,7 +43,7 @@ export const ProjectsSection = () => {
                   {/* Overlay Links */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-background/60">
                     <motion.a
-                      href={project.github}
+                      href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.2 }}
@@ -87,7 +53,7 @@ export const ProjectsSection = () => {
                       <Github className="w-6 h-6" />
                     </motion.a>
                     <motion.a
-                      href={project.live}
+                      href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.2 }}

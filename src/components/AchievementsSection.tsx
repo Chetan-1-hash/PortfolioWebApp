@@ -1,25 +1,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, FileText, Lightbulb } from "lucide-react";
+import { Trophy} from "lucide-react";
+import { achievements } from "@/data/personalData";
 
-const achievements = [
-  {
-    icon: FileText,
-    title: "Research Paper Publication",
-    description: "Published Research Paper on Social Weather Assistance System at International Research Journal of Engineering and Technology",
-  },
-  {
-    icon: Lightbulb,
-    title: "Social Weather Assistance System",
-    description: "Designed a social weather assistance system using Machine Learning and IOT to assist farmers, travelers, and emergency services.",
-  },
-  {
-    icon: Lightbulb,
-    title: "SEHC System",
-    description: "Developed a Smart Enhanced Healthcare System concept utilizing IoT and machine learning for better patient care.",
-  },
-];
 
 export const AchievementsSection = () => {
   const ref = useRef(null);

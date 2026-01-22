@@ -1,21 +1,8 @@
+import { skills } from "@/data/personalData";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const skills = [
-  { name: "Java", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/java.png" },
-  { name: "Python", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/python.png" },
-  { name: "Angular", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/angular.png" },
-  { name: "JavaScript", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/javascript.png" },
-  { name: "TypeScript", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/typescript.png" },
-  { name: "Spring Boot", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/spring-boot.png" },
-  { name: "Hibernate", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/hibernate.png" },
-  { name: "HTML", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/html.png" },
-  { name: "CSS", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/css.png" },
-  { name: "Git", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/git.png" },
-  { name: "GitHub", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/github.png" },
-  { name: "MySQL", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/mysql.png" },
-];
 
 export const SkillsSection = () => {
   const ref = useRef(null);

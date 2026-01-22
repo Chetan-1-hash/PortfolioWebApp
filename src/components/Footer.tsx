@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -11,12 +10,13 @@ export const Footer = () => {
           transition={{ duration: 0.5 }}
           className="flex flex-col md:flex-row items-center justify-between gap-4"
         >
+          <p className="text-muted-foreground text-sm flex items-center gap-1">
+            CC
+          </p>
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Chetan Chopade. All rights reserved.
           </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> using React
-          </p>
+          
         </motion.div>
       </div>
     </footer>

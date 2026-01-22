@@ -3,28 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef, Suspense } from "react";
 import { GraduationCap, Calendar, Award } from "lucide-react";
 import { FloatingCube } from "./FloatingCube";
-import developerPortrait from "@/assets/developer-portrait.png";
-
-const education = [
-  {
-    degree: "BE - Computer Engineering",
-    institution: "PCET's Nutan Maharashtra Institute of Engineering and Technology, Talegoan Pune",
-    year: "2020-2024",
-    score: "CGPA - 8.89 | Percentage - 79.12%",
-  },
-  {
-    degree: "Maharashtra State Board HSC - 12th",
-    institution: "Novel Junior College of Science and Commerce, Chinchwad Pune",
-    year: "2018-2020",
-    score: "Percentage - 73.69%",
-  },
-  {
-    degree: "Maharashtra State Board SSC - 10th",
-    institution: "Defence Career Academy, Chhatrapati Sambhaji Nagar",
-    year: "2018",
-    score: "Percentage - 83.00%",
-  },
-];
+import { education, personalInfo } from "@/data/personalData";
 
 export const AboutSection = () => {
   const ref = useRef(null);
@@ -59,9 +38,9 @@ export const AboutSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
                   <div className="relative overflow-hidden rounded-xl">
                     <img
-                      src={developerPortrait}
+                      src={personalInfo.developerPortrait}
                       alt="Chetan Chopade - Developer"
-                      className="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="max-w-full max-h-full object-contain object-top transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                 </div>
@@ -82,14 +61,11 @@ export const AboutSection = () => {
             {/* About Text */}
             <div className="glass-card p-6 rounded-2xl">
               <p className="text-muted-foreground leading-relaxed">
-                I completed B.E in Computer Engineering, committed to utilizing my skills for the 
-                mission of the company. Looking for a challenging role in an organization to utilize 
-                my Core and Advanced Java, Python, and Machine Learning skills.
+                {personalInfo.aboutText1}
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-4">
-                I am an enthusiast in the field of <span className="text-primary font-semibold">Machine Learning</span> and <span className="text-primary font-semibold">Web Development</span>. Bringing 
-                forth the ability to work well with others to utilize my skills to visually enhance 
-                projects and upskilling other passionate technologies to create more delightful experiences.
+              <p className="text-muted-foreground leading-relaxed mt-4"
+                dangerouslySetInnerHTML={{ __html: personalInfo.aboutText2 }}
+              >
               </p>
             </div>
           </motion.div>

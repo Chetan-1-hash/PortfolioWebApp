@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Instagram } from "lucide-react";
+import { contactInfo, personalInfo, socialLinks } from "@/data/personalData";
 
 export const ContactSection = () => {
   const ref = useRef(null);
@@ -13,18 +14,6 @@ export const ContactSection = () => {
     // Handle form submission
     console.log(formData);
   };
-
-  const contactInfo = [
-    { icon: Mail, label: "Email", value: "chetanchopade20@gmail.com", href: "mailto:chetanchopade20@gmail.com" },
-    { icon: Phone, label: "Phone", value: "+91 XXXXXXXXXX", href: "tel:+91XXXXXXXXXX" },
-    { icon: MapPin, label: "Location", value: "Pune, Maharashtra, India", href: "#" },
-  ];
-
-  const socialLinks = [
-    { icon: Github, href: "https://github.com/chetan-1-hash", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/chetan-chopade-27b50a25b/", label: "LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/chetan_chopade13/", label: "Instagram" },
-  ];
 
   return (
     <section id="contact" className="py-24 relative bg-secondary/30">
