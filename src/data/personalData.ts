@@ -68,7 +68,7 @@ export const skills = [
   { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "GitHub", icon: "https://chetan-1-hash.github.io/PortfolioWebApp/assets/github.png" },
+  { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=12599&format=png&color=000000" },
   { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
 ];
 
@@ -187,16 +187,11 @@ export const socialLinks = [
 ];
 
 export const loadingTerminalCode = [
-  "Initializing Neural Network...",
-  "Loading AI Modules...",
-  "Compiling Experience Data...",
-  "Analyzing Skill Matrix...",
-  "Connecting to Creative Hub...",
+  "Initializing Portfolio Environment...",
+  "Loading Projects & Skills...",
+  "Fetching Experience Modules...",
+  "Compiling Work Samples...",
+  "Optimizing Performance...",
+  "Connecting to Creativity Hub...",
   "Portfolio Ready!",
 ];
-
-export const siteMetadata = {
-  title: "Chetan Chopade | Portfolio",
-  description: "Full Stack Developer specializing in Java, React, and Web Technologies",
-  author: "Chetan Chopade",
-};
