@@ -6,7 +6,7 @@
 
 import { FileText, Lightbulb } from "lucide-react";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
-import ProfileImg from "@/assets/a1.png";
+import ProfileImg from "/a1.png";
 import AboutmeImg from "@/assets/developer-portrait.png";
 import CricLivelySS from "@/assets/CricLivelySS.png";
 import NoteappImg from "@/assets/Noteapp-img.png";
