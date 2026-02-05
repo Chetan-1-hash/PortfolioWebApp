@@ -62,7 +62,53 @@ export const ContactSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            {/* unchanged */}
+            <div>
+              <h3 className="text-2xl font-bold font-display mb-4">Let's Connect</h3>
+              <p className="text-muted-foreground">
+                Feel free to reach out to me for any opportunities, collaborations, or just to say hi!
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {contactInfo.map((info, index) => (
+                <motion.a
+                  key={info.label}
+                  href={info.href}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  className="flex items-center gap-4 p-4 glass-card rounded-xl hover-lift group"
+                >
+                  <div className="p-3 rounded-lg gradient-bg">
+                    <info.icon className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">{info.label}</p>
+                    <p className="font-medium group-hover:text-primary transition-colors">{info.value}</p>
+                  </div>
+                </motion.a>
+              ))}
+            </div>
+
+            {/* Social Links */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
+              <div className="flex gap-4">
+                {socialLinks.map((social) => (
+                  <motion.a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, y: -5 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-3 glass-card rounded-full hover:glow transition-all duration-300"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
           </motion.div>
 
           {/* Contact Form */}

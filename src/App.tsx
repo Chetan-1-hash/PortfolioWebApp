@@ -8,6 +8,12 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <main className="relative overflow-hidden min-h-screen bg-background">
+    {children}
+  </main>
+);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -20,9 +26,8 @@ const App = () => (
         }}
       >
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Layout><Index /></Layout>} />
+          <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </HashRouter>
     </TooltipProvider>
