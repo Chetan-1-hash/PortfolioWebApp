@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig(({ mode }) => ({
-  base: mode === "github" ? "/PortfolioWebApp/" : "/",
+  base: mode === 'production' ? '/PortfolioWebApp/' : '/',
   plugins: [react()],
   resolve: {
     alias: {
