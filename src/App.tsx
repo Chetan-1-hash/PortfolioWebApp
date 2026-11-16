@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <main className="relative overflow-hidden min-h-screen bg-background">
+  <main className="relative overflow-x-hidden min-h-screen bg-background">
     {children}
   </main>
 );
